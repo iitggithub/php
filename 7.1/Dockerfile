@@ -2,6 +2,7 @@ FROM iitgdocker/apache:2.4.6
 
 MAINTAINER "The Ignorant IT Guy" <iitg@gmail.com>
 
+COPY epel.repo /etc/yum.repos.d/epel.repo
 COPY remi.repo /etc/yum.repos.d/remi.repo
 
 RUN yum -y --nogpgcheck install \
